@@ -15,16 +15,16 @@ class NoticiaController extends Controller
     {
         $noticias = Noticia::all();
         return view('noticias.index', [
-        'noticias' => Noticia::where('status',Noticia::STATUS_ATIVO)->paginate(4)
-    ]);
+        'noticias' => Noticia::where('status', Noticia::STATUS_ATIVO)->paginate(4)
+        ]);
     }
     public function indexinativo()
     {
         $noticias = Noticia::all();
         return view('noticias.indexinativo', [
-        'noticias' => Noticia::where('status',Noticia::STATUS_INATIVO)->paginate(4)
-    ]);
-}
+        'noticias' => Noticia::where('status', Noticia::STATUS_INATIVO)->paginate(4)
+        ]);
+    }
     public function create()
     {
         return view('noticias.create');
