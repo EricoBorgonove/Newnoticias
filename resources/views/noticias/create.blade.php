@@ -44,7 +44,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="data_publicacao">Data da Publicação</label>
+                    <label for="data_publicacao">Data da Publicação.</label>
                     <input type="text" name="data_publicacao" class="form-control" data-provide="datepicker" data-date-language="pt-BR">
 
                 </div>
