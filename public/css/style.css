@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ddd;
+    font-family: 'Roboto Condensed';
+}
+
+.nav_tabs{
+    width: 600px;
+    height: 400px;
+    margin: 100px auto;
+    background-color: #fff;
+    position: relative;
+}
+
+.nav_tabs ul{
+    list-style: none;
+}
+
+.nav_tabs ul li{
+    float: left;
+}
+
+.tab_label{
+    display: block;
+    width: 100px;
+    background-color: #363b48;
+    padding: 25px;
+    font-size: 20px;
+    color:#fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.nav_tabs .rd_tab { 
+display:none;
+position: absolute;
+}
+
+.nav_tabs .rd_tab:checked ~ label { 
+background-color: #e54e43;
+color:#fff;}
+
+.tab-content{
+border-top: solid 5px #e54e43;
+background-color: #fff;
+display: none;
+position: absolute;
+height: 320px;
+width: 600px;
+left: 0;	
+}
+
+.rd_tab:checked ~ .tab-content{
+display: block;
+}
+.tab-content h2{
+padding: 10px;
+color: #87d3b7;
+}
+.tab-content article{
+padding: 10px;
+color: #555;
+}
+.white{
+background-color: white;
+margin-top: 50px;
+padding:10px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.botoes {
+    display: flex;
+    flex-direction: row;
+}
+.botoes a{
+    margin: 15px;
+}
+.comentario{
+    margin: 0;
+    margin-bottom: 20px;
+    background-color: #ddd;
+    padding: 10px;
+}
+.comentario h4{
+    color: blue;
+    font-weight: bold;
+    text-align: center;
+}
+.comentario-texto{
+    margin: 1px;
+    display: flex;
+    flex-direction: row;
+}
+.comentario-texto p {
+    display: flex;
+    align-items: flex-start;
+    
+}
+.duplicate{
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5px;
+}
+.duplicate div{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-right: 5px;
+}
+.duplicate img{
+    width: 50%;
+}
